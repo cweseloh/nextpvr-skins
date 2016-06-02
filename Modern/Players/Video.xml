@@ -1,0 +1,59 @@
+<Skin>
+	<Element name="StatusMessage" location="72,5" size="22,5">
+		<Rect location="0,0" size="100,100" fillColor="BaseColor2" borderColor="Transparent" borderWidth="0"/>
+  		<Text text="@statusMessage" location="2,2" size="96,96" font="Default" align="Center" valign="Center"/>
+	</Element>
+
+	<Element name="SmallStatusMessage" location="6,5" size="10,5">
+		<Rect location="0,0" size="100,100" fillColor="BaseColor2" borderColor="Transparent" borderWidth="0"/>
+  		<Text text="@statusMessage" location="2,2" size="96,96" font="Default" align="Center" valign="Center"/>
+	</Element>
+
+	<Element name="MouseControls" location="30,66" size="40,7">
+		<Rect location="0,0" size="100,100" fillColor="BaseColor2" borderColor="Transparent" borderWidth="0"/>		
+		<!-- Stop -->
+		<Image name="Stop" source="Stop.png" visible="!@StopOver" location="5,5" size="10,90" fixedAspectRatio="true"/>		
+		<Image source="Stop-Over.png" visible="@StopOver" location="5,5" size="10,90" fixedAspectRatio="true"/>
+		<!-- SkipBack -->
+  	<Image name="SkipBack" source="SkipBack.png" visible="!@SkipBackOver" location="25,5" size="10,90" fixedAspectRatio="true"/>
+  	<Image source="SkipBack-Over.png" visible="@SkipBackOver" location="25,5" size="10,90" fixedAspectRatio="true"/>
+  	<!-- Rewind -->
+  	<Image name="Rewind" source="Rewind.png" visible="!@RewindOver" location="35,5" size="10,90" fixedAspectRatio="true"/>  	
+  	<Image source="Rewind-Over.png" visible="@RewindOver" location="35,5" size="10,90" fixedAspectRatio="true"/>  	
+  	<!-- Pause/Play -->
+  	<Image name="PausePlay" source="Pause.png" visible="!@PauseOver" location="45,5" size="10,90" fixedAspectRatio="true"/>
+  	<Image source="PausePlay-Over.png" visible="@PauseOver" location="45,5" size="10,90" fixedAspectRatio="true"/>  	
+  	<!-- FastForward -->
+  	<Image name="FastForward" source="FastForward.png" visible="!@FastForwardOver" location="55,5" size="10,90" fixedAspectRatio="true"/>
+  	<Image source="FastForward-Over.png" visible="@FastForwardOver" location="55,5" size="10,90" fixedAspectRatio="true"/>
+  	<!-- SkipForward -->
+  	<Image name="SkipForward" source="SkipForward.png" visible="!@SkipForwardOver" location="65,5" size="10,90" fixedAspectRatio="true"/>
+  	<Image source="SkipForward-Over.png" visible="@SkipForwardOver" location="65,5" size="10,90" fixedAspectRatio="true"/>
+	</Element>
+	
+	<Element name="Timeline" location="10,93.05" size="80,8.5">
+<!--
+		<Rect location="0.2,0.2" size="99.6,100" fillColor="BaseColor2" borderColor="Accent2_Vertical_FadeOut" borderWidth="0.15"/>
+		<Rect location="0.2,0.2" size="99.6,100" fillColor="Base1_Vertical_FadeOut" borderColor="Transparent" borderWidth="0.15"/>
+-->
+		<Text text="@position" location="4,23.18" size="15,33.99" font="DefaultReverse"  borderColor="Border2" outlineWidth="1" align="Left" valign="Center"/>
+		<Text text="@duration" location="81,23.18" size="15,33.99" font="DefaultReverse"  borderColor="Border2" outlineWidth="1" align="Right" valign="Center"/>	
+		<Image name="timelineBar" source="@timelineGraphic" location="15.45,24" size="69.1,24.81" />
+		<Rect location="15.45,24" size="69.1,24.81" fillColor="Base1_Vertical_FadeOut" borderColor="Border2" borderWidth="0.07"/>
+		<Rect location="15.45,24" size="34.6,24.81" fillColor="Base1_Menu_Horizontal_FadeIn" borderColor="Transparent" borderWidth="0"/>
+		<Rect location="50,24" size="34.6,24.81" fillColor="Base1_Menu_Horizontal_FadeOut" borderColor="Transparent" borderWidth="0"/>
+	</Element>
+
+	<Element name="MetaData" location="0,57.17" size="100,43.6">
+		<Rect location="0,37.08" size="100,62" fillColor="BaseColor2"/>
+<!--
+		<Rect location="0,37.08" size="28.68,0.57" fillColor="Accent1_Horizontal_FadeIn"/>
+		<Rect location="28.65,37.08" size="71.35,0.57" fillColor="Accent1_Horizontal_FadeOut"/>			
+-->
+		
+		<Text text="@title" location="17,38.63" size="81.45,10" font="Title1Light"  borderColor="Border2" outlineWidth="1" align="Left"/>
+		<Text text="@currentTime" location="0,39.41" size="98.45,100" font="DefaultReverse"  borderColor="Border2" outlineWidth="1" align="Right"/>
+		<Text text="@description" location="17,48.63" size="81.45,33.99" font="Title3SmallLight"  borderColor="Border2" outlineWidth="1" align="Left" wrap="true"/>
+		<Image source="@coverArt" location="1.55,0" size="13.91,74" fixedAspectRatio="true"/>
+	</Element>
+</Skin>

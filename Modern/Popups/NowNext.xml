@@ -1,0 +1,60 @@
+<Skin>
+	<Element name="NowNext" location="10,10" size="80,77" alpha="255" okButton="40,85.4" cancelButton="60,85.4">
+		<Rect location="2,2" size="98,98" fillColor="#fafafa" borderColor="Popup_Border" borderWidth="0.07"/>
+		<Text text="@title" location="3,3" size="72,6" font="Title0" wrap="false" valign="Bottom"/>
+	</Element>
+
+
+	<Element name="ListView" location="5,12.36" size="90,75.28" alpha="255" visibleRows="6">
+<!--
+		<Rect location="0,0" size="50,0.3" fillColor="Accent2_Horizontal_FadeIn"/>
+		<Rect location="49.99,0" size="50.01,0.3" fillColor="Accent2_Horizontal_FadeOut"/>
+		<Rect location="0,0" size="100,100" fillColor="BaseColor1"/>
+		<Rect location="0,99.5" size="50,0.3" fillColor="Accent2_Horizontal_FadeIn"/>
+		<Rect location="49.99,99.5" size="50.01,0.3" fillColor="Accent2_Horizontal_FadeOut"/>
+-->
+	</Element>
+
+	<Element name="ListItemNormal" location="13.0,19.55" size="75.26,9.52" alpha="255" alphaFade="true">
+		<Rect location="0.15,0.15" size="99.7,98.45" fillColor="Normal_Recording" borderColor="Accent1" borderWidth="0.15"/>
+		<Image source="@channelIcon" location="6.5,5" size="9,90" fixedAspectRatio="true" /> 
+		<Text text="@channelName" location="50,15" size="48,40" font="DefaultSmall" align="Right" valign="Center"/>
+		<Text text="@now" visible="@hasChannelIcon" location="15.5,10" size="82,40" font="Default" align="Left" valign="Center"/>
+		<Text text="@next" visible="@hasChannelIcon" location="15.5,55" size="88,40" font="DefaultMinimum" color="#3a3a3a" align="Left" valign="Center"/>
+		<Text text="@now" visible="!@hasChannelIcon" location="8,10" size="82,40" font="Default" align="Left" valign="Center"/>
+		<Text text="@next" visible="!@hasChannelIcon" location="8,55" size="88,40" font="DefaultMinimum" align="Left" valign="Center"/>
+		<Text text="@channelNumber" location="1.0,10" size="82,40" font="Default" align="Left" valign="Center"/>
+	</Element>
+
+	<Element name="ListItemSelected" location="13.0,19.55" size="75.26,9.52" alpha="255" alphaFade="true">
+		<Rect visible="@controlSelected" location="0.15,0.15" size="99.7,99.4" fillColor="Selected_Recording" borderColor="Border2" borderWidth="0.3"/>
+		<Rect visible="@controlNotSelected" location="0.15,0.15" size="99.7,99.4" fillColor="Selected_Recording" borderColor="Border2" borderWidth="0.3"/>
+		<Image source="@channelIcon" location="6.5,5" size="9,90" fixedAspectRatio="true" /> 
+		<Text text="@channelName" location="50,15" size="48,40" font="DefaultReverseSmall" align="Right" valign="Center"/>
+		<Text text="@now" visible="@hasChannelIcon" location="15.5,10" size="82,40" font="Title1_Selected" align="Left" valign="Center"/>
+		<Text text="@next" visible="@hasChannelIcon" location="15.5,55" size="88,40" font="DefaultReverseMinimum" align="Left" valign="Center"/>
+		<Text text="@now" visible="!@hasChannelIcon" location="8,10" size="82,40" font="Title1_Selected" align="Left" valign="Center"/>
+		<Text text="@next" visible="!@hasChannelIcon" location="8,55" size="88,40" font="DefaultReverseMinimum" align="Left" valign="Center"/>
+		<Text text="@channelNumber" location="1.0,10" size="82,40" font="Title1_Selected" align="Left" valign="Center"/>
+	</Element>
+<!--	
+	<Element name="ListSelectionMetaData" location="61.8,15.45" size="39.7,69.1" alpha="255">
+		<RoundedRect location="0,0" size="100,99.4" fillColor="BaseColor2" borderColor="Accent1_Horizontal_FadeIn" radius="2.32" borderWidth="0.3"/>
+		<Text text="@titleSubtitle" visible="@isItem" location="2.32,1.55" size="93.03,18.18" font="Title1" wrap="true" align="Left" valign="Bottom"/>
+		<Text text="@subtitle" visible="@isItem" location="2.32,20.51" size="93.03,5" font="Title2Small" align="Left" wrap="true"/>
+		<Text text="@description" visible="@isItem" location="2.32,26.28" size="93.03,63.17" font="DefaultSmall" align="left" wrap="true"/>
+		<Text text="@failureReason" location="2.32,88.45" size="93.03,10" font="Title5Minimum" wrap="true" align="Center" valign="Bottom"/>
+		<Image source="@previewImage" visible="@isFolder" location="15,15" size="70,70" fixedAspectRatio="true" /> 
+	</Element>
+!-->
+
+	<Element name="ChannelGroup" location="0,80.44" size="100,4.64" alpha="255" alphaFade="true">
+		<Text text="@channelGroup" location="13,0" size="25,100" font="Title3Small" align="Left" valign="Center"/>
+	</Element>
+
+	
+	<Element name="ListPosition" location="0,80.44" size="100,4.64" alpha="255" alphaFade="true">
+		<Text text="Channel:" location="70,0" size="10,100" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@positionInfo" location="0,0" size="85.7,100" font="Title3Minimum" align="Right" valign="Center"/>
+	</Element>
+</Skin>

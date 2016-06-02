@@ -1,0 +1,258 @@
+<Skin>
+    <Fonts>
+        <!--Dark Text-->
+        <Font name="Default" color="#333333" size="13" typeFace="RobotoCondensed" />
+        <Font name="Default_Opaque" color="#A0333333" size="13" typeFace="RobotoCondensed" />
+        <Font name="DefaultSmall" color="#333333" size="11.95" typeFace="RobotoCondensed" />
+        <Font name="DefaultSmall_Opaque" color="#A0333333" size="11.95" typeFace="RobotoCondensed" />
+        <Font name="DefaultMinimum" color="#333333" size="10.9" typeFace="RobotoCondensed" />
+        <Font name="DefaultMinimum_Opaque" color="#A0333333" size="10.9" typeFace="RobotoCondensed" />
+
+        <!--Light Text-->
+        <Font name="DefaultReverse" color="#fafafa" size="13" typeFace="RobotoCondensed" />
+        <Font name="DefaultReverseSmall" color="#fafafa" size="11.95" typeFace="RobotoCondensed" />
+        <Font name="DefaultReverseMinimum" color="#fafafa" size="10.9" typeFace="RobotoCondensed" />
+
+        <!-- Titles -->
+        <Font name="Title0" color="#1f8fff" size="14.05" typeFace="RobotoCondensed" style="Bold" />
+        <!-- gray -->
+        <Font name="Title1" color="#333333" size="14.05" typeFace="RobotoCondensed" style="Bold" />
+        <Font name="Title1_Selected" color="#fafafa" size="14.05" typeFace="RobotoCondensed" style="Bold" />
+        <Font name="Title1Small" color="#333333" size="11.95" typeFace="RobotoCondensed" />
+        <Font name="Title1Minimum" color="#333333" size="10.9" typeFace="RobotoCondensed" />
+        <!-- blue -->
+        <Font name="Title2" color="#1f8fff" size="13" typeFace="RobotoCondensed" />
+        <Font name="Title2Small" color="#1f8fff" size="11.95" typeFace="RobotoCondensed" />
+        <Font name="Title2Minimum" color="#1f8fff" size="10.9" typeFace="RobotoCondensed" />
+        <!-- more gray -->
+        <Font name="Title3" color="#333333" size="13" typeFace="RobotoCondensed" />
+        <Font name="Title3Small" color="#333333" size="11.95" typeFace="RobotoCondensed" />
+        <Font name="Title3Small_Italic" color="#333333" size="11.95" typeFace="RobotoCondensed" style="Italic" />
+        <Font name="Title3Minimum" color="#333333" size="10.9" typeFace="RobotoCondensed" />
+        <!-- light gray -->
+        <Font name="Title4" color="#666666" size="13" typeFace="RobotoCondensed" />
+        <Font name="Title4ExtraLarge" color="Vertical:#06b2d9ff-#12b2d9ff" size="56.2" typeFace="RobotoCondensed" />
+        <Font name="Title4Small" color="#666666" size="11.95" typeFace="RobotoCondensed" />
+        <Font name="Title4Minimum" color="#666666" size="10.9" typeFace="RobotoCondensed" />
+        <!-- red -->
+        <Font name="Title5Small" color="#ff0d00" size="11.95" typeFace="RobotoCondensed" />
+        <Font name="Title5Small_Opaque_Italic" color="#C0ff0d00" size="11.95" typeFace="RobotoCondensed" style="Italic" />
+        <Font name="Title5Minimum" color="#ff0d00" size="10.9" typeFace="RobotoCondensed" />
+        <Font name="Title5Minimum_Opaque_Italic" color="#C0ff0d00" size="10.9" typeFace="RobotoCondensed" style="Italic" />
+
+
+        <!--Misc Text-->
+        <Font name="ButtonListReverse" color="#fafafa" size="10.9" typeFace="RobotoCondensed" />
+        <Font name="GuideText" color="#fafafa" size="11.95" typeFace="RobotoCondensed" />
+
+        <!--Main Menu-->
+        <Font name="MainMenuItem" color="#333333" typeFace="RobotoCondensed" size="14" />
+        <Font name="MainMenuItem_Selected" color="#1f8fff" typeFace="RobotoCondensed" size="18" />
+        
+        <Font name="Title1Light" color="#fafafa" size="14.05" typeFace="RobotoCondensed" style="Bold" />
+        <Font name="Title3SmallLight" color="#fafafa" size="11.95" typeFace="RobotoCondensed" />
+
+        <Font name="DefaultSmaller" color="#666666" size="10" typeFace="RobotoCondensed" />
+        <Font name="DefaultReverseSmaller" color="#dddddd" size="10" typeFace="RobotoCondensed" />
+
+        <!--Live TV Metadata-->
+        <Font name="MetadataTitle1" color="#fafafa" size="14.05" typeFace="RobotoCondensed" style="Bold" />
+        <Font name="MetaTitle4Minimum" color="#fafafa" size="10.9" typeFace="RobotoCondensed" />
+        <Font name="MetaTitle1Minimum" color="#fafafa" size="10.9" typeFace="RobotoCondensed" />
+        <Font name="MetaDefault" color="#fafafa" size="13" typeFace="RobotoCondensed" />
+        <Font name="MetaDefaultSmall" color="#fafafa" size="11.95" typeFace="RobotoCondensed" />
+
+    </Fonts>
+
+
+
+    <Colors>
+        <!--Global Light-->
+        <Color name="BaseColor1" color="#fafafa" />
+        <Color name="BaseColor1_FontFix" color="#02c2e9ff" />
+
+        <!--Global Dark-->
+        <Color name="BaseColor2" color="#44000000" />
+        <Color name="BaseColor2_FontFix" color="#02000305" />
+        <Color name="BaseColor2_Opaque" color="#60000305" />
+
+        <!--Buttons-->
+        <Color name="Normal_Button" color="Transparent" />
+        <Color name="Selected_Button" color="#333333" />
+
+        <!--Normal-->
+        <Color name="Normal_List" color="Horizontal:#60000305-#40000305" />
+        <Color name="Normal_Icon" color="Vertical:#40000305-#60000305" />
+        <Color name="Normal_Recording" color="#99fafafa" />
+
+        <!--Selected-->
+        <Color name="Selected_List" color="#333333" />
+        <Color name="Selected_Icon" color="#333333" />
+        <Color name="Selected_Covers" color="#333333" />
+        <Color name="Selected_Recording" color="#333333" />
+        <Color name="Selected_Recording_NoFocus" color="#999999" />
+
+        <!--OSD-->
+        <Color name="BaseColor_OSD" color="#A0000305" />
+
+        <!-- Borders -->
+        <Color name="Border1" color="#60c2e9ff" />
+        <Color name="Border2" color="#30000305" />
+
+        <!-- Accent colours -->
+        <Color name="Accent1" color="Transparent" />
+        <Color name="Accent2" color="#60ff9d00" />
+        <Color name="Accent3" color="#600080ff" />
+        <Color name="Accent4" color="#600080ff" />
+
+        <!--Gradients-->
+        <!--Light-->
+        <Color name="Base1_Horizontal_FadeIn" color="Horizontal:#02c2e9ff-#24c2e9ff" />
+        <Color name="Base1_Horizontal_FadeOut" color="Horizontal:#24c2e9ff-#02c2e9ff" />
+        <Color name="Base1_Vertical_FadeIn" color="Vertical:#02c2e9ff-#24c2e9ff" />
+        <Color name="Base1_Vertical_FadeOut" color="Vertical:#24c2e9ff-#02c2e9ff" />
+        <Color name="Base1_Menu_Horizontal_FadeIn" color="Horizontal:#02c2e9ff-#48c2e9ff" />
+        <Color name="Base1_Menu_Horizontal_FadeOut" color="Horizontal:#48c2e9ff-#02c2e9ff" />
+        <!--Dark-->
+        <Color name="Base2_Horizontal_FadeIn" color="Horizontal:#02000305-#000305" />
+        <Color name="Base2_Horizontal_FadeOut" color="Horizontal:#000305-#02000305" />
+        <Color name="Base2_Horizontal_FadeIn_Opaque" color="Horizontal:#02000305-#60000305" />
+        <Color name="Base2_Horizontal_FadeOut_Opaque" color="Horizontal:#60000305-#02000305" />
+        <Color name="Base2_Vertical_FadeIn" color="Vertical:#02000305-#000305" />
+        <Color name="Base2_Vertical_FadeOut" color="Vertical:#000305-#02000305" />
+        <!--Blue-->
+        <Color name="Accent1_Horizontal_FadeIn" color="Horizontal:#020080ff-#0080ff" />
+        <Color name="Accent1_Horizontal_FadeOut" color="Horizontal:#0080ff-#020080ff" />
+        <Color name="Accent1_Vertical_FadeIn" color="Vertical:#020080ff-#0080ff" />
+        <Color name="Accent1_Vertical_FadeOut" color="Vertical:#0080ff-#020080ff" />
+        <!--Orange-->
+        <Color name="Accent2_Horizontal_FadeIn" color="Horizontal:#02ff9d00-#ff9d00" />
+        <Color name="Accent2_Horizontal_FadeOut" color="Horizontal:#ff9d00-#02ff9d00" />
+        <Color name="Accent2_Vertical_FadeIn" color="Vertical:#02ff9d00-#ff9d00" />
+        <Color name="Accent2_Vertical_FadeOut" color="Vertical:#ff9d00-#02ff9d00" />
+
+        <!--TVGuide-->
+        <Color name="backgroundColor" color="#666666" />
+        <Color name="selectedColor" color="#00c23d" />
+        <Color name="recordingColor" color="#8f0a00" />
+        <Color name="recordingSelectedColor" color="#d60e00" />
+        <Color name="Channels" color="Transparent" />
+        <Color name="Guide_Timeline" color="Transparent" />
+        <Color name="Guide_Description" color="Transparent" />
+
+        <!--Poppup-->
+        <Color name="Popup_Border" color="Transparent" />
+        <Color name="Popup_ScreenMask" color="#90000305" />
+        <Color name="Popup" color="#fafafa" />
+    </Colors>
+
+
+
+    <!--Date and Time-->
+    <Element name="DateTime" location="61.8,0.77" size="38.2,3.86" alpha="255">
+        <Text text="@dateTime" location="0,12.36" size="97.5,87.64" font="Title3Minimum" align="Right" valign="Center" />
+    </Element>
+
+
+
+    <!--Message Popup-->
+    <Element name="Message" location="0,0" size="100,100" alpha="240">
+        <Rect location="0,0" size="100,100" fillColor="Popup_ScreenMask" borderColor="Transparent" borderWidth="0" />
+        <Rect location="20,40" size="60,20" fillColor="Popup" borderColor="Popup_Border" borderWidth="0.1" />
+        <!--
+        <Rect location="20,40" size="45,0.2" fillColor="Accent1_Horizontal_FadeIn" />
+        <Rect location="64.95,40" size="15.05,0.2" fillColor="Accent1_Horizontal_FadeOut" />
+        <Rect location="20,60" size="15,0.2" fillColor="Accent1_Horizontal_FadeIn" />
+        <Rect location="34.95,60" size="45.05,0.2" fillColor="Accent1_Horizontal_FadeOut" />
+-->
+        <Text text="@message" location="22,42" size="56,16" font="Default" align="Center" valign="Center" wrap="true" />
+    </Element>
+
+
+
+    <!--NowPlaying-->
+    <Element name="NowPlaying" location="4,93.05" size="92,4.64" alpha="255">
+<!--
+        <Rect location="0,0" size="50.01,100" fillColor="Base2_Horizontal_FadeIn_Opaque" borderColor="Transparent" borderWidth="0" />
+        <Rect location="50,0" size="50,100" fillColor="Base2_Horizontal_FadeOut_Opaque" borderColor="Transparent" borderWidth="0" />
+        <Rect location="0,94" size="50.01,6" fillColor="Accent2_Horizontal_FadeIn" />
+        <Rect location="50,94" size="50,6" fillColor="Accent2_Horizontal_FadeOut" />
+-->
+        <Text text="@nowPlaying" location="8,2" size="84,98" font="Title3Small_Italic" align="Center" valign="Center" />
+    </Element>
+
+
+
+    <!--ButtonList-->
+    <Element name="ButtonList" location="0,1.55" size="67.98,4.64" alpha="255" alphaFade="true">
+        <!--
+        <Rect location="0,5" size="100,90" fillColor="Base2_Horizontal_FadeOut_Opaque" borderColor="Transparent" borderWidth="0" />
+        <Rect location="0,94" size="100,6.18" fillColor="Accent2_Horizontal_FadeOut" />
+-->
+
+        <Rect visible="@button1Selected" location="1.13,12.36" size="16,75.28" fillColor="Selected_Button" borderColor="Border2" borderWidth="0.15" />
+        <Image source="_Common\menu-selected.png" visible="@button1Selected" location="1,1" size="4,98" fixedAspectRatio="true" />
+        <Image source="_Common\menu-normal.png" visible="!@button1Selected" location="1,1" size="4,98" fixedAspectRatio="true" />
+        <Text text="@button1" name="@button1" location="2.13,10" size="14,80" font="Title3Minimum" align="Center" valign="Center" />
+        <Text text="@button1" name="@button1" visible="@button1Selected" location="2.13,10" size="14,80" font="ButtonListReverse" align="Center" valign="Center" />
+
+        <Rect visible="@button2Selected" location="15.13,12.36" size="16,75.28" fillColor="Selected_Button" borderColor="Border2" borderWidth="0.15" />
+        <Text text="@button2" name="@button2" location="16.13,10" size="14,80" font="Title3Minimum" align="Center" valign="Center" />
+        <Text text="@button2" name="@button2" visible="@button2Selected" location="16.13,10" size="14,80" font="ButtonListReverse" align="Center" valign="Center" />
+
+        <Rect visible="@button3Selected" location="30.13,12.36" size="16,75.28" fillColor="Selected_Button" borderColor="Border2" borderWidth="0.15" />
+        <Text text="@button3" name="@button3" location="31.13,10" size="14,80" font="Title3Minimum" align="Center" valign="Center" />
+        <Text text="@button3" name="@button3" visible="@button3Selected" location="31.13,10" size="14,80" font="ButtonListReverse" align="Center" valign="Center" />
+
+        <Rect visible="@button4Selected" location="45.13,12.36" size="16,75.28" fillColor="Selected_Button" borderColor="Border2" borderWidth="0.15" />
+        <Text text="@button4" name="@button4" location="46.13,10" size="14,80" font="Title3Minimum" align="Center" valign="Center" />
+        <Text text="@button4" name="@button4" visible="@button4Selected" location="46.13,10" size="14,80" font="ButtonListReverse" align="Center" valign="Center" />
+
+        <Rect visible="@button5Selected" location="61.13,12.36" size="16,75.28" fillColor="Selected_Button" borderColor="Border2" borderWidth="0.15" />
+        <Text text="@button5" name="@button5" location="62.13,10" size="14,80" font="Title3Minimum" align="Center" valign="Center" />
+        <Text text="@button5" name="@button5" visible="@button5Selected" location="62.13,10" size="14,80" font="ButtonListReverse" align="Center" valign="Center" />
+
+        <Rect visible="@button6Selected" location="75.13,12.36" size="16,75.28" fillColor="Selected_Button" borderColor="Border2" borderWidth="0.15" />
+        <Text text="@button6" name="@button6" location="76.13,10" size="14,80" font="Title3Minimum" align="Center" valign="Center" />
+        <Text text="@button6" name="@button6" visible="@button6Selected" location="76.13,10" size="14,80" font="ButtonListReverse" align="Center" valign="Center" />
+    </Element>
+
+    <Element name="ButtonListHidden" location="0,1.55" size="67.98,4.64" alpha="255" alphaFade="true">
+        <Image source="_Common\menu-normal.png" location="1,1" size="4,98" fixedAspectRatio="true" />
+        <Text text="Menu" location="2.13,10" size="16,80" font="Title3Minimum" align="Center" valign="Center" />
+    </Element>
+
+    <!-- popup buttons -->
+    <Element name="PopupLeftButtonSelected" location="12.36,23.17" size="15.45,4.64" alpha="255">
+        <Rect location="2,2" size="96,96" fillColor="Selected_Button" borderColor="#DE080808" borderWidth="0.38" />
+        <Text text="@buttonText" location="2,2" size="96,96" font="DefaultReverseSmall" align="Center" valign="Center" />
+    </Element>
+
+    <Element name="PopupLeftButtonNormal" location="12.36,23.17" size="15.45,4.64" alpha="255">
+        <Rect location="2,2" size="96,96" fillColor="Normal_Button" borderColor="Accent1" borderWidth="0.38" />
+        <Text text="@buttonText" location="2,2" size="96,96" font="DefaultSmall" align="Center" valign="Center" />
+    </Element>
+
+    <Element name="PopupCenterButtonSelected" location="9.27,23.17" size="15.45,4.64" alpha="255">
+        <Rect location="2,2" size="96,96" fillColor="Selected_Button" borderColor="#DE080808" borderWidth="0.38" />
+        <Text text="@buttonText" location="2,2" size="96,96" font="DefaultReverseSmall" align="Center" valign="Center" />
+    </Element>
+
+    <Element name="PopupCenterButtonNormal" location="9.27,23.17" size="15.45,4.64" alpha="255">
+        <Rect location="2,2" size="96,96" fillColor="Normal_Button" borderColor="Accent1" borderWidth="0.38" />
+        <Text text="@buttonText" location="2,2" size="96,96" font="DefaultSmall" align="Center" valign="Center" />
+    </Element>
+
+
+
+    <!-- Old style screen buttons -->
+    <Element name="ScreenButtonSelected" location="1.55,15.45" size="17,4.64" alpha="255">
+        <RoundedRect location="2,2" size="96,96" fillColor="Selected_Button" borderColor="#DE080808" radius="0.52" borderWidth="0.38" />
+        <Text text="@buttonText" location="2,2" size="96,96" font="DefaultReverseSmall" align="Center" valign="Center" />
+    </Element>
+
+    <Element name="ScreenButtonNormal" location="1.55,15.45" size="17,4.64" alpha="255">
+        <RoundedRect location="2,2" size="96,96" fillColor="Normal_Button" borderColor="Accent1" radius="0.52" borderWidth="0.38" />
+        <Text text="@buttonText" location="2,2" size="96,96" font="DefaultSmall" align="Center" valign="Center" />
+    </Element>
+</Skin>

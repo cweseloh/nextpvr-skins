@@ -1,0 +1,21 @@
+<Skin>
+	<Element name="SelectRecordingForPlayback" location="15,20" size="70,60" alpha="255" okButton="40,85.4" cancelButton="60,85.4">
+		<Rect location="2,2" size="98,98" fillColor="Popup" borderColor="Popup_Border" borderWidth="0.07"/>
+		<Text text="The tuner you were using was required for a recording. Would you like to switch to watching a recording, or exit back to the menu?" location="2.5,5" size="95,20" font="DefaultSmall" align="center" valign="Center" wrap="true"/>
+	</Element>
+
+
+	<Element name="ListView" location="32.0,32.0" size="37,5" alpha="255" visibleRows="7">
+	</Element>
+
+	<Element name="ListItemNormal" location="25,38.0" size="50,5" alpha="255" alphaFade="true">
+		<Rect location="0.15,0.15" size="99.7,98.45" fillColor="Normal_Recording" borderColor="Accent1" borderWidth="0.15"/>
+		<Text text="@name" location="2.5,10" size="95,80" font="DefaultSmall" align="Left" valign="Center"/>
+	</Element>
+
+	<Element name="ListItemSelected" location="25,38.0" size="50,5" alpha="255" alphaFade="true">
+		<Rect visible="@controlSelected" location="0.15,0.15" size="99.7,99.4" fillColor="Selected_Recording" borderColor="Border2" borderWidth="0.3"/>
+		<Rect visible="@controlNotSelected" location="0.15,0.15" size="99.7,99.4" fillColor="Selected_Recording" borderColor="Border2" borderWidth="0.3"/>
+		<Text text="@name" location="2.5,10" size="95,80" font="DefaultReverseSmall" align="Left" valign="Center"/>
+	</Element>
+</Skin>

@@ -1,0 +1,35 @@
+<Skin>
+	<Element name="StatusMessage" location="72,5" size="22,5">
+		<Rect location="0,0" size="100,100" fillColor="BaseColor2" borderColor="Transparent" borderWidth="0"/>
+  		<Text text="@statusMessage" location="2,2" size="96,96" font="Default" align="Center" valign="Center"/>
+	</Element>
+
+	<Element name="SmallStatusMessage" location="6,5" size="10,5">
+		<Rect location="0,0" size="100,100" fillColor="BaseColor2" borderColor="Transparent" borderWidth="0"/>
+  		<Text text="@statusMessage" location="2,2" size="96,96" font="Default" align="Center" valign="Center"/>
+	</Element>
+
+	
+	<Element name="Timeline" location="10,93.05" size="80,8.5">
+<!--		<Rect location="0.2,0.2" size="99.6,100" fillColor="BaseColor2" borderColor="Accent2_Vertical_FadeOut" borderWidth="0.15"/>-->
+		<Text text="@position" location="4,20" size="15,33.99" font="Title3Minimum"  borderColor="Border2" outlineWidth="1" align="Left" valign="Center"/>
+		<Text text="@duration" location="81,20" size="15,33.99" font="Title3Minimum"  borderColor="Border2" outlineWidth="1" align="Right" valign="Center"/>	
+		<Image source="@timelineGraphic" location="15.45,24" size="69.1,24.81" />
+			<Rect location="15.45,24" size="69.1,24.81" fillColor="Base1_Vertical_FadeOut" borderColor="Border2" borderWidth="0.07"/>
+			<Rect location="15.45,24" size="34.6,24.81" fillColor="Base1_Menu_Horizontal_FadeIn" borderColor="Transparent" borderWidth="0"/>
+			<Rect location="50,24" size="34.6,24.81" fillColor="Base1_Menu_Horizontal_FadeOut" borderColor="Transparent" borderWidth="0"/>
+	</Element>
+
+	<Element name="MetaData" location="0,57.17" size="100,42.85">
+		<Rect location="0,37.08" size="100,62" fillColor="BaseColor2"/>
+<!--
+			<Rect location="0,37.08" size="50.1,0.77" fillColor="Accent1_Horizontal_FadeIn"/>
+			<Rect location="50,37.08" size="50,0.77" fillColor="Accent1_Horizontal_FadeOut"/>			
+-->
+		
+		<Text text="@title" location="17,38.63" size="81.45,10" font="Title1"  borderColor="Border2" outlineWidth="1" align="Left"/>
+		<!-- <Text text="@currentTime" location="0,35" size="96,100" font="Yellow" align="Right"/> -->
+		<Text text="@description" location="17,48.63" size="81.45,33.99" font="DefaultSmall"  borderColor="Border2" outlineWidth="1" align="Left" wrap="true"/>
+		<Image source="@coverArt" location="1.55,0" size="13.91,74" fixedAspectRatio="true"/>
+	</Element>
+</Skin>

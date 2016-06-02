@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin>
+<!--
+  <Fonts>
+    <Font name="Default" color="Black" size="13" />
+    <Font name="MenuItems" color="White" typeFace="Calibri" style="bold" size="25" />
+  </Fonts>
+-->
+  <!--
+  <Element name="CutAway" location="0,20" size="100,60" alpha="220">
+    <Image location="0,0" size="100,100" source="cutaway.png" />
+  </Element>
+  -->
+  <!--
+  <Element name="TaskImage" location="45,40" size="50,50" alpha="220">
+    <Image location="0,0" size="100,100" source="@taskImage" />
+  </Element>
+  -->
+<!--
+  <Element name="ButtonBackground" location="0,0" size="36,100" alpha="220">
+    <RoundedRect location="2,2" size="98,96" fillColor="#82181818" borderColor="Transparent" radius="2" borderWidth="0"/>
+  </Element>
+-->
+  <Element name="MenuButtonNormal" location="3,26" size="30,8">
+    <Text text="@buttonText" location="13,00" size="100,100" font="MainMenuItem" align="Left" valign="Center"/>
+  </Element>
+  <Element name="MenuButtonSelected" location="2,26" size="30,8">
+<!--    <Rect location="2,2" size="98,98" fillColor="#282828" borderColor="Transparent" borderWidth="0"/>-->
+<!--    <Rect location="6,36" size="5,28" fillColor="Green" borderColor="Black" borderWidth="1"/>-->
+    <Text text="@buttonText" location="13,00" size="100,100" font="MainMenuItem_Selected" align="Left" valign="Center"/>
+  </Element>
+
+  <Element name="VideoInset" location="45,25" size="50,50" >
+  </Element>
+</Skin>

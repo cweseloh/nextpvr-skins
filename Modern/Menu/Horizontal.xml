@@ -1,0 +1,21 @@
+<Skin>
+	<Element name="ButtonBackground" location="0,67.98" size="100,15.45" alpha="255">	
+<!--
+		<Rect location="0,0" size="100,70" fillColor="Base1_Vertical_FadeOut"/>	
+		<Rect location="0,-1.55" size="100,3.09" fillColor="Border2"/>	
+		<Rect location="0,0" size="50.02,70" fillColor="Base1_Menu_Horizontal_FadeIn"/>		
+		<Rect location="50,0" size="50,70" fillColor="Base1_Menu_Horizontal_FadeOut"/>
+		<RoundedRect location="37.08,13.13" size="25.84,104" fillColor="BaseColor2" borderColor="Accent1_Vertical_FadeOut" radius="2.32" borderWidth="0.15"/>
+		<Rect location="0,65" size="50.02,2.32" fillColor="Accent2_Horizontal_FadeIn"/>
+		<Rect location="49.99,65" size="50,2.32" fillColor="Accent2_Horizontal_FadeOut"/>
+		<Rect location="0,67" size="100,33" fillColor="BaseColor2"/>
+-->
+	</Element>
+
+	<Element name="MenuButton" location="0,0" size="23.18,12.36" >
+		<Text text="@buttonText" location="0,24.72" size="100,92" font="MainMenuItem_Selected" align="Center"/>
+	</Element>
+
+	<Element name="VideoInset" location="20,5" size="60,60" >
+	</Element>
+</Skin>

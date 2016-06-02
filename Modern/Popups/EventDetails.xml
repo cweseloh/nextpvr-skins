@@ -1,0 +1,53 @@
+<Skin>
+	<Element name="PopupButtons" location="9.83,30.9" offset="0">
+	</Element>
+
+	<Element name="ScheduleRecording" location="0,0" size="100,100" alpha="255">
+		<Rect location="0,0" size="100,100" fillColor="Popup_ScreenMask" borderColor="Transparent" borderWidth="0"/>
+		<Rect location="9.85,19.1" size="80.30,61.8" fillColor="Popup" borderColor="Popup_Border" borderWidth="0.07"/>
+<!--
+		<Rect location="10,19.1" size="61.85,0.15" fillColor="Accent1_Horizontal_FadeIn"/>
+		<Rect location="71.8,19.1" size="18.2,0.15" fillColor="Accent1_Horizontal_FadeOut"/>
+		<Rect location="10,80.75" size="18.7,0.15" fillColor="Accent1_Horizontal_FadeIn"/>
+		<Rect location="28.65,80.75" size="61.8,0.15" fillColor="Accent1_Horizontal_FadeOut"/>
+		<Rect location="30,35" size="0.15,15" fillColor="Accent2_Vertical_FadeIn"/>
+		<Rect location="30,49.9" size="0.15,25.2" fillColor="Accent2_Vertical_FadeOut"/>
+		<Text text="Details" location="9.77,64.89" size="79,20" font="Title4ExtraLarge"/>
+-->
+		
+		<Image source="@previewImage" visible="@buttonCount=4" location="12.5,44.5" size="15,32" fixedAspectRatio="true" />		
+		<Image source="@previewImage" visible="@buttonCount=5" location="12.5,49.0" size="15,29.5" fixedAspectRatio="true" />		
+		<Image source="@previewImage" visible="@buttonCount=6" location="12.5,54.0" size="15,24" fixedAspectRatio="true" />		
+
+		<Text text="@title" location="32,21.63" size="58,8" font="Title0" wrap="true" valign="Bottom"/>
+
+		<Image source="@channelIcon" location="32,32" size="5.6,7.4" fixedAspectRatio="true" />
+
+		<Text text="@channelNumberName" visible="@hasChannelIcon" location="38,33.5" size="58,3" font="Title4Minimum"/>
+		<Text text="@period" visible="@hasChannelIcon" location="38,36.5" size="58,3" font="Title4Minimum"/>
+
+		<Text text="@channelNumberName" visible="!@hasChannelIcon" location="32,33.5" size="58,3" font="Title4Minimum"/>
+		<Text text="@period" visible="!@hasChannelIcon" location="32,36.5" size="58,3" font="Title4Minimum"/>
+
+		<Text text="@subtitle" location="32,40.5" size="72,4" font="Title3Small"/>		
+		<Text text="@descriptionWithGenre" location="32,44" size="56,34" font="DefaultSmall" wrap="true"/> 
+<!--
+                <Line location1="0,0" location2="100,50" color="Blue" width="5"/>
+                <Line location1="25,10" location2="75,90" color="White" width="5" borderColor="Red" borderWidth="5"/>
+-->
+	</Element>
+
+
+	<Element name="OptionNormal" location="9.83,1.55" size="80.34,6.18">			
+		<RoundedRect location="2,1" size="96,98" fillColor="Black" borderColor="Border2" radius="1.55" borderWidth="0.77"/>
+		<Text text="@optionName" location="5,0" size="22,100" font="Default" align="Left" valign="Center"/>
+		<Text text="@optionValue" location="26,0" size="76,100" font="Default" align="Left" valign="Center"/>
+	</Element>
+
+	<Element name="OptionSelected" location="9.83,1.55" size="80.34,6.18">
+		<Element name="GeneralSelection"/>
+		<RoundedRect location="2,1" size="96,98" fillColor="Black" borderColor="Border2" radius="1.55" borderWidth="0.77"/>
+		<Text text="@optionName" location="5,0" size="22,100" font="Default" align="Left" valign="Center"/>
+		<Text text="@optionValue" location="26,0" size="76,100" font="Default" align="Left" valign="Center"/>
+	</Element>
+</Skin>

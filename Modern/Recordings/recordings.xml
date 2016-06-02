@@ -1,0 +1,56 @@
+<Skin>
+	<Fonts>
+		<Font name="Default" color="Black" size="13"/> 
+		<Font name="ButtonText" color="White" size="11.5" style="Bold"/> 
+		<Font name="Default" color="White" size="11.5" style="Bold"/> 
+		<Font name="Title1Text" color="Yellow" size="11.5" style="Bold"/> 
+		<Font name="DefaultSmall" color="White" size="11" typeFace="Tahoma"/> 
+	</Fonts>
+
+
+	<Element name="ButtonList" location="0,0" size="30,15" alpha="170">
+		<Rect location="-26,-110" size="126,198" fillColor="Black" borderColor="Transparent" borderWidth="0"/>
+  		<Text text="Back" location="3,0" size="96,100" color="White"  font="DefaultSmall"/>
+	</Element>
+
+	<!-- screen buttons -->
+	<Element name="ScreenButtonSelected" location="4.5,11" size="17,5" alpha="230">
+		<Rect location="2,2" size="98,98" fillColor="#383838" borderColor="Transparent" borderWidth="0"/>
+  		<Text text="@buttonText" location="8,2" size="96,98" color="White"  font="Default" borderColor="Black" outlineWidth="1" align="Left" valign="Center"/>
+	</Element>
+
+	<Element name="ScreenButtonNormal" location="4.5,11" size="17,5" alpha="230">
+  		<Text text="@buttonText" location="8,2" size="96,98" color="White"  font="Default" borderColor="Black" outlineWidth="1" align="Left" valign="Center"/>
+	</Element>
+
+
+
+
+	<Element name="ListView" location="25,10" size="80,80" alpha="150" visibleRows="8">
+		<Rect location="2,1" size="96,98" fillColor="Black" borderColor="Transparent" borderWidth="0"/>
+	</Element>
+
+	<Element name="ListSelectionMetaData" location="47.5,20" size="50,65" alpha="180">
+<!--		<Rect location="0,0" size="100,100" fillColor="Black" borderColor="Transparent" radius="1" borderWidth="0"/> 
+		<Text text="@name" location="46,8" size="46,10" font="Default"/>
+		<Image source="@previewImage" location="0,6" size="44,80" fixedAspectRatio="true" /> -->
+	</Element>
+
+	<Element name="ListItemNormal" location="26,12" size="75,9.25" alpha="200" alphaFade="true">
+<!--		<RoundedRect location="2,1" size="96,98" fillColor="Black" borderColor="Transparent" radius="1" borderWidth="0"/> -->
+		<Text text="@name" location="4,10" size="88,40" font="Title1Text" align="Left" valign="Center"/>
+		<Text text="@status" location="50,10" size="46,40" font="Default" align="Right" valign="Center"/>
+		<Text text="@period" location="4,50" size="88,40" font="Default" align="Left" valign="Center"/>
+		<Text text="@channel" location="50,50" size="46,40" font="Default" align="Right" valign="Center"/>
+	</Element>
+
+	<Element name="ListItemSelected" location="26,12" size="75,9.25" alpha="200" alphaFade="true">
+		<Rect visible="@controlSelected" location="2,1" size="96,98" fillColor="#383838" borderColor="Transparent" borderWidth="0"/>
+		<Rect visible="@controlNotSelected" location="2,1" size="96,98" fillColor="Black" borderColor="Transparent" borderWidth="0"/>
+		<Text text="@name" location="4,10" size="88,40" font="Title1Text" align="Left" valign="Center"/>
+		<Text text="@status" location="50,10" size="46,40" font="Default" align="Right" valign="Center"/>
+		<Text text="@period" location="4,50" size="88,40" font="Default" align="Left" valign="Center"/>
+		<Text text="@channel" location="50,50" size="46,40" font="Default" align="Right" valign="Center"/>
+	</Element>
+
+</Skin>

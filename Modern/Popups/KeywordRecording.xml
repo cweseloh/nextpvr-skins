@@ -1,0 +1,30 @@
+<Skin>
+	<Element name="ScheduleRecording" location="0,0" size="100,100" alpha="255" okButton="40,80.4" cancelButton="60,80.4">
+		<Rect location="0,0" size="100,100" fillColor="Popup_ScreenMask" borderColor="Transparent" borderWidth="0"/>
+		<Rect location="9.85,14.85" size="80.30,70.30" fillColor="Popup" borderColor="Popup_Border" borderWidth="0.07"/>
+<!--
+		<Rect location="10,14.85" size="51.81,0.15" fillColor="Accent1_Horizontal_FadeIn"/>
+		<Rect location="61.8,14.85" size="28.2,0.15" fillColor="Accent1_Horizontal_FadeOut"/>
+		<Rect location="10,85" size="28.21,0.15" fillColor="Accent1_Horizontal_FadeIn"/>
+		<Rect location="38.2,85" size="51.8,0.15" fillColor="Accent1_Horizontal_FadeOut"/>
+		<Rect location="20,21.5" size="30.01,0.15" fillColor="Accent2_Horizontal_FadeIn"/>
+		<Rect location="50,21.5" size="30.01,0.15" fillColor="Accent2_Horizontal_FadeOut"/>				
+-->
+		<Text text="Keyword Recording" location="2,17" size="96,20" font="Title0" align="center"/>
+	</Element>
+
+	<Element name="OptionNormal" location="12,24" size="76,6.4" optionSpacing="6.5">		
+		<Rect location="0.1,0.1" size="99.8,99.8" fillColor="BaseColor2_FontFix" borderColor="Transparent" borderWidth="0"/>
+		<Text text="@optionName" location="3,0" size="22,100" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@optionValue" location="31,0" size="64,100" font="Default" align="Left" valign="Center"/>
+	</Element>
+
+	<Element name="OptionSelected" location="12,24" size="76,6.4">
+		<Element name="GeneralSelection"/>
+		<Rect location="0.1,0.1" size="99.8,99.8" fillColor="Selected_List" borderColor="Border2" borderWidth="0.1"/>
+		<Text text="@optionName" location="3,0" size="22,100" font="DefaultReverse" align="Left" valign="Center"/>
+		<Text text="@optionValue" location="31,0" size="64,100" font="DefaultReverse" align="left" valign="Center" wrap="true"/>		
+		<Image source="..\_Common\Left.png" name="ActionLeft" location="94,25" size="1.5,50"/>
+		<Image source="..\_Common\Right.png" name="ActionRight" location="96,25" size="1.5,50"/>
+	</Element>
+</Skin>

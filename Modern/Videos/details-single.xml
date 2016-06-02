@@ -1,0 +1,44 @@
+<Skin>	
+	<Element name="FanArt" location="0,0" size="100,100" >
+	</Element>
+	
+	<Element name="PopupLeftButtonSelected" location="5,19.5" size="15.45,4.64" alpha="255">
+		<Rect location="2,2" size="96,96" fillColor="Selected_Button"/>
+  		<Text text="@buttonText" location="2,2" size="96,96" font="DefaultReverseSmall" align="Center" valign="Center"/>
+	</Element>
+
+	<Element name="PopupLeftButtonNormal" location="5,19.5" size="15.45,4.64" alpha="255">
+		<Rect location="2,2" size="96,96" fillColor="Normal_Button" />	
+  		<Text text="@buttonText" location="2,2" size="96,96" font="DefaultSmall" align="Center" valign="Center"/>
+	</Element>
+
+	<Element name="Details" location="0,12.36" size="100,75.28"  >
+<!--
+		<Rect location="0,0" size="50,0.3" fillColor="Accent2_Horizontal_FadeIn"/>
+		<Rect location="49.99,0" size="50.01,0.3" fillColor="Accent2_Horizontal_FadeOut"/>
+-->
+		<Rect visible="!@hasFanArt" location="0,0" size="100,100" fillColor="BaseColor1"/>
+		<Rect visible="@hasFanArt" location="0,0" size="100,100" fillColor="Vertical:#B0fafafa-#E0fafafa"/>
+<!--
+		<Rect location="0,99.4" size="50,0.6" fillColor="Accent2_Horizontal_FadeIn"/>
+		<Rect location="49.99,99.4" size="50.01,0.6" fillColor="Accent2_Horizontal_FadeOut"/>
+-->
+
+
+		<Image source="..\Recordings\red.png" visible="@flaggedRed" location="82,9" size="4,4" fixedAspectRatio="true" />
+		<Image source="..\Recordings\green.png" visible="@flaggedGreen" location="85,9" size="4,4" fixedAspectRatio="true" />
+		<Image source="..\Recordings\yellow.png" visible="@flaggedYellow" location="88,9" size="4,4" fixedAspectRatio="true" />
+		<Image source="..\Recordings\blue.png" visible="@flaggedBlue" location="91,9" size="4,4" fixedAspectRatio="true" />
+
+
+		<Image source="@image" visible="@hasImage+@buttonCount=2" location="5.2,23.5" size="15,55" fixedAspectRatio="true" valign="Top" />		
+		<Image source="@image" visible="@hasImage+@buttonCount=3" location="5.2,30.5" size="15,55" fixedAspectRatio="true" valign="Top" />		
+		<Image source="@image" visible="@hasImage+@buttonCount=4" location="5.2,37.5" size="15,55" fixedAspectRatio="true" valign="Top" />		
+
+		<Text text="@name" location="22,10" size="70,5" font="Title1" align="Left" valign="Center"/>
+		<Text text="@subtitleOrAirDate" location="22,16" size="70,5" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@description" location="22,25" size="72,70" font="Title3Small" align="Left" valign="Top" wrap="true"/>
+
+	</Element>
+
+</Skin>

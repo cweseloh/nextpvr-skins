@@ -1,0 +1,43 @@
+<Skin>
+	<Element name="StatusMessage" location="72,5" size="22,5">
+		<Rect location="0,0" size="100,100" fillColor="BaseColor2" borderColor="Transparent" borderWidth="0"/>
+  		<Text text="@statusMessage" location="2,2" size="96,96" font="Default" align="Center" valign="Center"/>
+	</Element>
+
+
+	<Element name="NowNext" location="4.64,57.17" size="90.72,45.17" clearBeforeRender="true">
+		<Rect location="0,37.08" size="100,62.92" fillColor="BaseColor2" borderColor="Transparent" borderWidth="0"/>
+<!--
+		<Rect location="7.73,37.08" size="42.27,0.77" fillColor="Accent1_Horizontal_FadeIn"/>
+		<Rect location="50,37.08" size="42.27,0.77" fillColor="Accent1_Horizontal_FadeOut"/>	
+-->
+
+		<Text text="CH:" location="5.41,63.40" size="4.64,10" font="Title1Minimum" align="Left"/>
+		<Text text="@channelNumber" location="10.06,62.53" size="7,10.4" font="Default" align="Left" />
+		<Image source="@channelIcon" location="3.87,0" size="9.28,74" fixedAspectRatio="true"/>	
+		<Text text="@channelName" location="17,38.63" size="81.45,10" font="Title1" align="Left"/>
+		<Text text="@currentTime" location="0,39.41" size="98.45,100" font="Title4Minimum" align="Right"/>
+
+		<Image source="..\_Common\Recording.png" visible="@recordingNext" location="1.55,51.72" size="4,10" fixedAspectRatio="true"/>
+		<Text text="Now:" location="17,51.72" size="6.18,15.45" font="Default" align="Left"/>
+		<Text text="@nowPeriod" location="23.18,51.72" size="23,20" font="Default"/>
+		<Text text="@nowTitle" location="45,51.72" size="55,20" font="Default"/>
+
+		<Image source="..\_Common\Recording.png" visible="@recordingNext" location="1.55,62.53" size="4,10" fixedAspectRatio="true"/>
+		<Text text="Next:" location="17,62.53" size="6.18,15.45" font="Title3" align="Left"/>
+		<Text text="@nextPeriod" location="23.18,62.53" size="23,20" font="Title3"/>
+		<Text text="@nextTitle" location="45,62.53" size="55,20" font="Title3"/>	
+	</Element>
+
+
+	<Element name="Details" location="4.64,0" size="90.72,25" clearBeforeRender="true">
+		<Rect location="0,-5" size="100,100" fillColor="BaseColor2" borderColor="Transparent" borderWidth="0"/>
+<!--
+		<Rect location="7.73,94.08" size="42.27,0.77" fillColor="Accent1_Horizontal_FadeIn"/>
+		<Rect location="50,94.08" size="42.27,0.77" fillColor="Accent1_Horizontal_FadeOut"/>	
+-->
+
+		<Text text="@nowSubtitleOrTitle" location="5,15.63" size="90,15" font="Title1" align="Left"/>
+		<Text text="@nowDescription" location="5,32" size="90,65" font="Default" align="Left" wrap="true"/>
+	</Element>
+</Skin>

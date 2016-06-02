@@ -1,0 +1,36 @@
+<Skin>
+	<Element name="ScheduleRecording" location="0,0" size="100,100" alpha="255" okButton="40,85.4" cancelButton="60,85.4">
+		<Rect location="0,0" size="100,100" fillColor="Popup_ScreenMask" borderColor="Transparent" borderWidth="0"/>
+			<Rect location="9.85,9.85" size="80.30,80.30" fillColor="Popup" borderColor="Popup_Border" borderWidth="0.07"/>
+<!--
+				<Rect location="10,9.85" size="51.81,0.15" fillColor="Accent1_Horizontal_FadeIn"/>
+				<Rect location="61.8,9.85" size="28.2,0.15" fillColor="Accent1_Horizontal_FadeOut"/>
+				<Rect location="10,90" size="28.21,0.15" fillColor="Accent1_Horizontal_FadeIn"/>
+				<Rect location="38.2,90" size="51.8,0.15" fillColor="Accent1_Horizontal_FadeOut"/>
+					<Rect location="20,46.16" size="30.01,0.15" fillColor="Accent2_Horizontal_FadeIn"/>
+					<Rect location="50,46.16" size="30.01,0.15" fillColor="Accent2_Horizontal_FadeOut"/>
+-->
+
+		<Text text="@title" location="12,11.38" size="72,6" font="Title0" wrap="false" valign="Bottom"/>
+<!--		<Image source="@channelIcon" location="12,18.67" size="5.6,7.4" fixedAspectRatio="true" />-->
+		<Text text="@channelNumberName" location="12,20.17" size="72,3" font="Title4Minimum"/>
+		<Text text="@period" location="12,23.17" size="72,3" font="Title4Minimum"/>
+		<Text text="@subtitle" location="12,26.55" size="72,5" font="Title2Small"/>		
+		<Text text="@description" location="12,30.17" size="76,15" font="DefaultSmall" wrap="true"/>		
+	</Element>
+
+	<Element name="OptionNormal" location="12,47.17" size="76,6.4" optionSpacing="6.5">		
+		<Rect location="0.1,0.1" size="99.8,99.8" fillColor="BaseColor2_FontFix" borderColor="Transparent" borderWidth="0"/>
+		<Text text="@optionName" location="2,0" size="22,100" font="Default" align="Left" valign="Center"/>
+		<Text text="@optionValue" location="24,0" size="74,100" font="Default" align="Left" valign="Center"/>
+	</Element>
+
+	<Element name="OptionSelected" location="12,47.17" size="76,6.4">
+		<Element name="GeneralSelection"/>
+		<Rect location="0.1,0.1" size="99.8,99.8" fillColor="Selected_List" borderColor="Border2" borderWidth="0.1"/>
+		<Text text="@optionName" location="2,0" size="22,100" font="DefaultReverse" align="Left" valign="Center"/>
+		<Text text="@optionValue" location="24,0" size="74,100" font="DefaultReverse" align="Left" valign="Center"/>		
+		<Image source="..\_Common\Left.png" name="ActionLeft" location="94,25" size="1.5,50"/>
+		<Image source="..\_Common\Right.png" name="ActionRight" location="96,25" size="1.5,50"/>
+	</Element>
+</Skin>

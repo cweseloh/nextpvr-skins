@@ -1,0 +1,14 @@
+<Skin>
+	<Element name="MessageBox"  location="0,0" size="100,100" alpha="255" doubleButton1Center="40,61" doubleButton2Center="60,61">
+		<Rect location="0,0" size="100,100" fillColor="Popup_ScreenMask" borderColor="Transparent" borderWidth="0"/>
+			<Rect location="15.45,35.45" size="69.1,28.92" fillColor="Popup" borderColor="Popup_Border" borderWidth="0.07"/>
+<!--
+				<Rect location="15.45,35.45" size="54.15,0.15" fillColor="Accent1_Horizontal_FadeIn"/>
+				<Rect location="69.55,35.45" size="15,0.15" fillColor="Accent1_Horizontal_FadeOut"/>
+				<Rect location="15.45,64.45" size="15.45,0.15" fillColor="Accent1_Horizontal_FadeIn"/>
+				<Rect location="30.45,64.45" size="54.1,0.15" fillColor="Accent1_Horizontal_FadeOut"/>
+-->
+		
+		<Text text="@message" location="17,39" size="66,16" font="DefaultSmall" wrap="true" align="Center" valign="Center"/>
+	</Element>	
+</Skin>

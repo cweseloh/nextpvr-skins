@@ -1,0 +1,39 @@
+<Skin>
+	<Element name="PlaylistBackground" location="0,0" size="100,100" alpha="255">	
+		<Rect location="0,0" size="100,100" fillColor="Popup_ScreenMask" />
+			<Rect location="9.83,19.1" size="80.34,61.8" fillColor="Popup" borderColor="Popup_Border" borderWidth="0.1"/>
+<!--
+				<Rect location="10,19.1" size="61.85,0.3" fillColor="Accent1_Horizontal_FadeIn"/>
+				<Rect location="71.8,19.1" size="18.2,0.3" fillColor="Accent1_Horizontal_FadeOut"/>
+				<Rect location="10,80.5" size="18.7,0.3" fillColor="Accent1_Horizontal_FadeIn"/>
+				<Rect location="28.2,80.5" size="61.8,0.3" fillColor="Accent1_Horizontal_FadeOut"/>
+					<Rect location="60.8,25" size="0.10,25" fillColor="Accent2_Vertical_FadeIn"/>
+					<Rect location="60.8,49.9" size="0.10,25.1" fillColor="Accent2_Vertical_FadeOut"/>
+-->
+		<Text text="Playlist" location="9.77,63.77" size="79,20" font="Title4ExtraLarge"/>
+		
+		
+		<Text text="Now Playing:" location="11.38,22.25" size="11,20" font="Title2Small"/>
+		<Text text="@name" location="21.77,21.77" size="66,5" font="Title0" wrap="true"/>
+		<Image source="@previewImage" location="62,30" size="25,42" fixedAspectRatio="true"/>
+		<Text text="@position" location="66,75" size="30,20" font="Title3Minimum" align="Center"/>
+	</Element>
+
+
+
+	<Element name="ListView" location="0,0" size="100,100" alpha="255" visibleRows="10">
+	</Element>
+
+	<!-- <Element name="ListSelectionMetaData" location="0,0" size="100,100" alpha="255">
+	</Element> -->
+
+	<Element name="ListItemNormal" location="11,28" size="48,4.6" alpha="255" alphaFade="true">
+		<Rect location="0.1,0.1" size="99.8,99.8" fillColor="Normal_List" borderColor="Transparent" borderWidth="0"/>
+		<Text text="@name" location="1.55,0" size="97,100" font="Default" align="Left" valign="Center"/>
+	</Element>
+
+	<Element name="ListItemSelected" location="11,28" size="48,4.6" alpha="255" alphaFade="true">
+		<Rect location="0.1,0.1" size="99.8,99.8" fillColor="Selected_List" borderColor="Border2" borderWidth="0.1"/>
+		<Text text="@name" location="1.55,0" size="97,100" font="DefaultReverse" align="Left" valign="Center"/>
+	</Element>
+</Skin>

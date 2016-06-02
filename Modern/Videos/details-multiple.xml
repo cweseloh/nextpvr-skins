@@ -1,0 +1,130 @@
+<Skin>	
+	<Element name="FanArt" location="0,0" size="100,100" >
+	</Element>
+	
+	<Element name="PopupLeftButtonSelected" location="5,17" size="15.45,4.64" alpha="255">		
+		<Rect visible="@controlSelected" location="2,2" size="96,96" fillColor="Selected_Button" />
+ 		<Text text="@buttonText" location="2,2" size="96,96" font="DefaultReverseSmall" align="Center" valign="Center"/>  		
+	</Element>
+
+	<Element name="PopupLeftButtonNormal" location="5,17" size="15.45,4.64" alpha="255">
+		<Rect location="2,2" size="96,96" fillColor="Normal_Button" />	
+ 		<Text text="@buttonText" location="2,2" size="96,96" font="DefaultSmall" align="Center" valign="Center"/>
+	</Element>
+
+
+	<Element name="Details" location="0,12.36" size="100,75.28"  >
+		<Image source="@image" visible="@hasImage" location="5,55" size="15,45" fixedAspectRatio="true" />		
+
+		<Text text="@name" location="22,54.5" size="70,4.5" font="Title1" align="Left" valign="Center"/>
+		<Text text="@period" location="25,54.5" size="70,4.5" font="Title3Small" align="Right" valign="Center"/>
+		<Text text="@subtitleOrAirDate" location="22,59.5" size="70,4.5" font="Title2" align="Left" valign="Center"/>
+		<Text text="@description" location="22,64" size="75,38" font="Title3Small" align="Left" valign="Top" wrap="true"/>
+
+		<Image source="..\Recordings\red.png" visible="@flaggedRed" location="82,59.5" size="4,4" fixedAspectRatio="true" />
+		<Image source="..\Recordings\green.png" visible="@flaggedGreen" location="85,59.5" size="4,4" fixedAspectRatio="true" />
+		<Image source="..\Recordings\yellow.png" visible="@flaggedYellow" location="88,59.5" size="4,4" fixedAspectRatio="true" />
+		<Image source="..\Recordings\blue.png" visible="@flaggedBlue" location="91,59.5" size="4,4" fixedAspectRatio="true" />
+
+	</Element>
+
+	<Element name="CoversView" location="0,12.36" size="100,75.28" alpha="255" visibleItems="5">
+		<Rect visible="!@hasFanArt" location="0,0" size="100,100" fillColor="BaseColor1"/>
+		<Rect visible="@hasFanArt" location="0,0" size="100,100" fillColor="Vertical:#90000305-#B0000305"/>
+	</Element>
+
+	<Element name="CoversVideoInset" location="30,8" size="40,40" >
+	</Element>
+
+	<Element name="CoversItem" location="0,12.36" size="18.61,35.1" alpha="255" alphaFade="true">
+<!--		<RoundedRect location="0.38,0.38" size="99.24,99.24" fillColor="Selected_Covers" borderColor="Border2" radius="1.55" borderWidth="0.38"/> -->
+		<Rect location="0.77,0.77" size="98.45,98.45" fillColor="Normal_Icon" borderColor="Border2" borderWidth="0.38"/>
+		<Image source="video.png" visible="!@hasImage" location="15,8" size="70,70" fixedAspectRatio="true" />
+		<Image source="@previewImage" visible="@hasImage" location="3,5" size="94,64" fixedAspectRatio="true" />
+                <Image source="watched.png" visible="@alreadyViewed" location="3,5" size="7,7"/>
+		<Text text="@name2" location="0,70" size="100,30" font="Title3Minimum" align="Center" valign="Center" wrap="true"/>
+	</Element>
+
+	<Element name="CoversSelectionMetaData" location="0,87.44" size="100,4.64" alpha="255" alphaFade="true">
+		<Rect location="-2,0" size="104,100" fillColor="BaseColor2"/>		
+		<Text text="@name" location="0,0" size="100,100" font="Title1" align="Center" valign="Center"/>
+	</Element>
+
+	<Element name="CoversPosition" location="0,87.44" size="100,4.64" alpha="255" alphaFade="true">
+		<Rect location="-2,0" size="104,100" fillColor="BaseColor2"/>		
+		<Text text="File:" location="85.36,0" size="10,100" font="Title3Minimum" align="Left" valign="Center"/>
+		<Text text="@positionInfo" location="0,0" size="95.36,100" font="Title3Minimum" align="Right" valign="Center"/>
+	</Element>
+	
+	
+
+	<Element name="IconView" location="0,12.36" size="100,75.28" alpha="255" rows="2" columns="4">
+<!--
+		<Rect location="0,0" size="50,0.3" fillColor="Accent2_Horizontal_FadeIn"/>
+		<Rect location="49.99,0" size="50.01,0.3" fillColor="Accent2_Horizontal_FadeOut"/>
+		<Rect visible="!@hasFanArt" location="0,0" size="100,100" fillColor="BaseColor1"/>
+		<Rect visible="@hasFanArt" location="0,0" size="100,100" fillColor="Vertical:#90000305-#B0000305"/>
+		<Rect location="0,99.4" size="50,0.6" fillColor="Accent2_Horizontal_FadeIn"/>
+		<Rect location="49.99,99.4" size="50.01,0.6" fillColor="Accent2_Horizontal_FadeOut"/>
+-->
+	</Element>
+
+	<Element name="IconItem" location="5,55" size="22.5,16" alpha="255" alphaFade="true">
+		<Rect visible="!@selected" location="0.77,0.77" size="98.45,98.45" fillColor="Normal_Icon" borderColor="Border2" borderWidth="0.38"/>
+		<Rect visible="@selected" location="0.77,0.77" size="98.45,98.45" fillColor="Selected_Icon" borderColor="Border2" borderWidth="0.38"/>
+		<Image visible="@hasImage" source="@previewImage" location="5,3" size="90,80" fixedAspectRatio="true" />
+		<Text text="@name2" visible="!@selected" location="0,85" size="100,15" font="Title3Minimum" align="Center" valign="Center"/>
+		<Text text="@name2" visible="@selected" location="0,85" size="100,15" font="DefaultReverseMinimum" align="Center" valign="Center"/>
+	</Element>
+
+	<Element name="IconSelectionMetaData" location="0,87.44" size="100,4.64" alpha="255" alphaFade="true">
+		<Rect location="-2,0" size="104,100" fillColor="BaseColor2"/>		
+		<Text text="@name" location="0,0" size="100,100" font="Title1" align="Center" valign="Center"/>
+	</Element>
+
+	<Element name="IconPosition" location="0,87.44" size="100,4.64" alpha="255" alphaFade="true">
+		<Rect location="-2,0" size="104,100" fillColor="BaseColor2"/>		
+		<Text text="File:" location="85.36,0" size="10,100" font="Title3Minimum" align="Left" valign="Center"/>
+		<Text text="@positionInfo" location="0,0" size="95.36,100" font="Title3Minimum" align="Right" valign="Center"/>
+	</Element>
+	
+	
+	<Element name="ListVideoInset" location="39,17" size="60.5,67" >
+	</Element>
+
+	
+	<Element name="ListView" location="0,12.36" size="100,75.28" alpha="255" alphaFade="true" visibleRows="6">
+		<!--<RoundedRect location="-2,0.5" size="102,99" fillColor="Base1_Horizontal_FadeOut" borderColor="Accent2_Horizontal_FadeOut" radius="0.01" borderWidth="0.15"/>-->
+		<Rect visible="!@hasFanArt" location="0,0" size="100,100" fillColor="#fafafa"/>
+		<Rect visible="@hasFanArt" location="0,0" size="100,100" fillColor="#fafafa"/>
+	</Element>
+
+	<Element name="ListItemNormal" location="22,17" size="72,4.64" alpha="255" alphaFade="true">
+		<Rect location="0.2,0.2" size="99.6,98.45" fillColor="Normal_List" />
+    <Image source="watched.png" visible="@alreadyViewed" location="0.7,5" size="1,90"/>
+		<Text text="@name" visible="@isItem" location="1.55,0" size="97,100" font="Default" align="Left" valign="Center"/>
+		
+		<Image source="..\Recordings\red.png" visible="@flaggedRed" location="82,5" size="3,90" fixedAspectRatio="true" />
+		<Image source="..\Recordings\green.png" visible="@flaggedGreen" location="85,5" size="3,90" fixedAspectRatio="true" />
+		<Image source="..\Recordings\yellow.png" visible="@flaggedYellow" location="88,5" size="3,90" fixedAspectRatio="true" />
+		<Image source="..\Recordings\blue.png" visible="@flaggedBlue" location="91,5" size="3,90" fixedAspectRatio="true" />		
+	</Element>
+
+	<Element name="ListItemSelected" location="22,17" size="72,4.64" alpha="255" alphaFade="true">
+		<Rect visible="@controlSelected" location="0.2,0.2" size="99.6,98" fillColor="Selected_List" borderColor="Border2" borderWidth="0.2"/>
+		<Rect visible="@controlNotSelected" location="0.2,0.2" size="99.6,98" fillColor="Selected_Recording_NoFocus" borderColor="Border2" borderWidth="0.2"/>		
+    <Image source="watched.png" visible="@alreadyViewed" location="0.7,5" size="1,90"/>
+		<Text text="@name" visible="@isItem" location="1.55,0" size="97,100" font="DefaultReverse" align="Left" valign="Center"/>
+		
+		<Image source="..\Recordings\red.png" visible="@flaggedRed" location="82,5" size="3,90" fixedAspectRatio="true" />
+		<Image source="..\Recordings\green.png" visible="@flaggedGreen" location="85,5" size="3,90" fixedAspectRatio="true" />
+		<Image source="..\Recordings\yellow.png" visible="@flaggedYellow" location="88,5" size="3,90" fixedAspectRatio="true" />
+		<Image source="..\Recordings\blue.png" visible="@flaggedBlue" location="91,5" size="3,90" fixedAspectRatio="true" />		
+	</Element>
+	
+	<Element name="ListPosition" location="0,87" size="100,4.64" alpha="255" alphaFade="true">
+			<Rect location="-2,0" size="104,100" fillColor="BaseColor2"/>		
+		<Text text="File:" location="83.36,0" size="10,100" font="Title3Minimum" align="Left" valign="Center"/>
+		<Text text="@positionInfo" location="0,0" size="93,100" font="Title3Minimum" align="Right" valign="Center"/>
+	</Element>
+</Skin>

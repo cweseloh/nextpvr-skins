@@ -1,0 +1,11 @@
+<Skin>
+	<Fonts>
+		<Font name="Default" color="White" size="13" style="Bold"/> 
+	</Fonts>
+
+	<Element name="FixedImage" location="30,30" size="30,30">
+		<Image source="logo.png" location="0,0" size="100,80" fixedAspectRatio="true"/>
+		<Text text="@nowPlaying" location="0,80" size="100,20" font="DefaultSmall" align="Center"/>
+	</Element>
+
+</Skin>

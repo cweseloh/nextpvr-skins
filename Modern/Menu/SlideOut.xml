@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Skin>
+
+    <Element name="MenuButtonNormal" location="1,20" size="26,6" buttonOffset="6">
+        <Text text="@buttonText" location="13,7" size="100,100" font="MainMenuItem" align="Left" valign="Center" />
+    </Element>
+
+    <Element name="MenuButtonSelected" location="1,20" size="26,6">
+        <Text text="@buttonText" location="13,7" size="100,100" font="MainMenuItem_Selected" align="Left" valign="Center" />
+    </Element>
+
+    <Element name="VideoInset" location="31,20" size="66,60" />
+</Skin>

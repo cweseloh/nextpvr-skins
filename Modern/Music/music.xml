@@ -1,0 +1,88 @@
+<Skin>	
+	<Element name="CoversView" location="0,49.24" size="100,38.2" alpha="255" visibleItems="5">
+<!--
+        <Rect location="0,-0.39" size="100,0.77" fillColor="Border2"/>	
+		<Rect location="0,0" size="100,100" fillColor="Base1_Vertical_FadeOut"/>	
+		<Rect location="0,0" size="50.02,98.8" fillColor="Base1_Menu_Horizontal_FadeIn"/>
+		<Rect location="50,0" size="50,98.8" fillColor="Base1_Menu_Horizontal_FadeOut"/>
+			<Rect location="0,99" size="50,0.77" fillColor="Accent2_Horizontal_FadeIn"/>
+			<Rect location="49.99,99" size="50.01,0.77" fillColor="Accent2_Horizontal_FadeOut"/>
+-->
+	</Element>
+
+	<Element name="CoversVideoInset" location="30,8" size="40,40" >
+	</Element>
+
+	<Element name="CoversItem" location="0,50.79" size="18.61,35.1" alpha="255" alphaFade="true">
+		<Rect location="0.38,0.38" size="99.24,99.24" fillColor="Selected_Covers" borderColor="Border2" borderWidth="0.38"/>
+		<Image source="..\_Common\folder_music.png" visible="@isFolder" location="15,15" size="70,70" fixedAspectRatio="true" />
+		<Image source="@previewImage" location="5,5" size="90,90" fixedAspectRatio="true" />
+	</Element>
+
+	<Element name="CoversSelectionMetaData" location="0,87.44" size="100,4.64" alpha="255" alphaFade="true">
+			<Rect location="-2,0" size="104,100" fillColor="BaseColor2"/>		
+		<Text text="@name" location="0,0" size="100,100" font="Title1Light" align="Center" valign="Center"/>
+		<Text text="File:" location="85.36,0" size="10,100" font="Title3Minimum" align="Left" valign="Center"/>
+		<Text text="@positionInfo" location="0,0" size="95.36,100" font="Title3Minimum" align="Right" valign="Center"/>
+	</Element>
+
+	
+
+	<Element name="IconView" location="0,12.36" size="100,75.28" alpha="255" rows="3" columns="7">
+<!--
+		<Rect location="0,0" size="50,0.3" fillColor="Accent2_Horizontal_FadeIn"/>
+		<Rect location="49.99,0" size="50.01,0.3" fillColor="Accent2_Horizontal_FadeOut"/>
+		<Rect location="0,0" size="100,100" fillColor="BaseColor1"/>
+		<Rect location="0,99.4" size="50,0.6" fillColor="Accent2_Horizontal_FadeIn"/>
+		<Rect location="49.99,99.4" size="50.01,0.6" fillColor="Accent2_Horizontal_FadeOut"/>
+-->
+	</Element>
+
+	<Element name="IconItem" location="3.09,15.45" size="13.3,22.9" alpha="255" alphaFade="true">
+		Rect visible="!@selected" location="0.77,0.77" size="98.45,98.45" fillColor="Normal_Icon" borderColor="Border2" borderWidth="0.38"/>
+		<Rect visible="@selected" location="0.77,0.77" size="98.45,98.45" fillColor="Selected_Icon" borderColor="Border2" borderWidth="0.38"/>
+		<Image source="..\_Common\folder_music.png" visible="@isFolderWithNoPreviewImage" location="15,15" size="70,70" fixedAspectRatio="true" />
+		<Image visible="!@selected" source="@previewImage" location="6,6" size="88,88" fixedAspectRatio="true" />
+		<Image visible="@selected" source="@previewImage" location="5,5" size="90,90" fixedAspectRatio="true" />
+	</Element>
+
+	<Element name="IconSelectionMetaData" location="0,87.44" size="100,4.64" alpha="255" alphaFade="true">
+			<Rect location="-2,0" size="104,100" fillColor="BaseColor2"/>		
+		<Text text="@name" location="0,0" size="100,100" font="Title1" align="Center" valign="Center"/>
+		<Text text="File:" location="85.36,0" size="10,100" font="Title3Minimum" align="Left" valign="Center"/>
+		<Text text="@positionInfo" location="0,0" size="95.36,100" font="Title3Minimum" align="Right" valign="Center"/>
+	</Element>
+
+	<Element name="ListVideoInset" location="39,17" size="60.5,67" >
+	</Element>
+
+	
+	<Element name="ListView" location="0,12.36" size="100,75.28" alpha="255" alphaFade="true" visibleRows="14">
+<!--		<Rect location="-2,0.5" size="102,99" fillColor="Base1_Horizontal_FadeOut" borderColor="Accent2_Horizontal_FadeOut" borderWidth="0.15"/>-->
+	</Element>
+
+	<Element name="ListSelectionMetaData" location="38,15.45" size="61.8,69.1" alpha="255" alphaFade="true">
+<!--		<Rect location="0,0" size="103,99.6" fillColor="BaseColor2" borderColor="Accent1_Horizontal_FadeIn" borderWidth="0.3"/>-->
+		<Image source="@previewImage" location="7,15" size="80,70" fixedAspectRatio="true" />
+	</Element>
+
+	<Element name="ListItemNormal" location="0.77,15.45" size="35.89,4.64" alpha="255" alphaFade="true">
+<!--		<Rect location="0.2,0.2" size="99.6,98.45" fillColor="Normal_List" borderColor="Accent1" borderWidth="0.07"/>-->
+		<Image source="..\_Common\folder_music.png" visible="@isFolder" location="1.55,12" size="8,100" fixedAspectRatio="true" align="Left" valign="Center"/>
+		<Text text="@name" visible="@isFolder" location="11,0" size="88.45,100" font="Default" align="Left" valign="Center"/>
+		<Text text="@name" visible="@isItem" location="1.55,0" size="97,100" font="Default" align="Left" valign="Center"/>
+	</Element>
+
+	<Element name="ListItemSelected" location="0.77,15.45" size="35.89,4.64" alpha="255" alphaFade="true">
+		<Rect location="0.2,0.2" size="99.6,98" fillColor="Selected_List" borderColor="Border2" borderWidth="0.2"/>
+		<Image source="..\_Common\folder_music.png" visible="@isFolder" location="1.55,12" size="8,100" fixedAspectRatio="true" align="Left" valign="Center"/>
+		<Text text="@name" visible="@isFolder" location="11,0" size="88.45,100" font="DefaultReverse" align="Left" valign="Center"/>
+		<Text text="@name" visible="@isItem" location="1.55,0" size="97,100" font="DefaultReverse" align="Left" valign="Center"/>
+	</Element>
+	
+	<Element name="ListPosition" location="0,87.44" size="100,4.64" alpha="255" alphaFade="true">
+			<Rect location="-2,0" size="104,100" fillColor="BaseColor2"/>		
+		<Text text="File:" location="85.36,0" size="10,100" font="Title3Minimum" align="Left" valign="Center"/>
+		<Text text="@positionInfo" location="0,0" size="95.36,100" font="Title3Minimum" align="Right" valign="Center"/>
+	</Element>
+</Skin>

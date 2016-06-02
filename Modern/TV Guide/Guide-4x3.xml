@@ -1,0 +1,61 @@
+<Skin>
+	<Element name="GuideDateTime" location="1.55,12.36" size="15.45,3.86" alpha="255">
+		<Rect location="0,1" size="110,130" fillColor="Guide_Timeline" borderColor="Transparent" borderWidth="0"/>
+<!--
+			<Rect location="0,92" size="50,6.95" fillColor="Accent1_Horizontal_FadeIn"/>
+			<Rect location="49.9,92" size="50.1,6.95" fillColor="Accent1_Horizontal_FadeOut"/>
+-->
+		<Text text="@dateTime" location="0,0" size="100,100" font="DefaultMinimum" align="Center" valign="Center"/>
+	</Element>
+
+	<Element name="GuideTimeLine" location="17.77,12.36" size="80.68,3.86" alpha="255">
+		<Rect location="-10,1" size="110,130" fillColor="Guide_Timeline" borderColor="Transparent" borderWidth="0"/>
+<!--
+			<Rect location="0,92" size="50.1,6.95" fillColor="Accent2_Horizontal_FadeIn"/>
+			<Rect location="50,92" size="50,6.95" fillColor="Accent2_Horizontal_FadeOut"/>
+-->
+		<Image source="@recordingHighlight" location="0,0" size="100,90"/>
+		<Text text="@0minutes" location="@0minutesX,0" size="100,100" font="DefaultMinimum" align="Left" valign="Center"/>
+		<Text text="@30minutes" location="@30minutesX,0" size="100,100" font="DefaultMinimum" align="Left" valign="Center"/>
+		<Text text="@60minutes" location="@60minutesX,0" size="100,100" font="DefaultMinimum" align="Left" valign="Center"/>
+		<Text text="@90minutes" location="@90minutesX,0" size="100,100" font="DefaultMinimum" align="Left" valign="Center"/>
+		<Text text="@120minutes" location="@120minutesX,0" size="100,100" font="DefaultMinimum" align="Left" valign="Center"/>
+		<Text text="@150minutes" location="@150minutesX,0" size="100,100" font="DefaultMinimum" align="Left" valign="Center"/>
+		<Text text="@180minutes" location="@180minutesX,0" size="100,100" font="DefaultMinimum" align="Left" valign="Center"/>
+		<Text text="@210minutes" location="@210minutesX,0" size="100,100" font="DefaultMinimum" align="Left" valign="Center"/>
+	</Element>
+
+
+
+	<Element name="Guide" location="17.77,16.6" size="80.68,6.12" alpha="255" visibleChannels="8" wrapText="false" backgroundColor="backgroundColor" selectedColor="selectedColor" recordingColor="recordingColor" recordingSelectedColor="recordingSelectedColor">
+		<Rect location="0,0" size="100,100" fillColor="Black"/>
+	</Element>
+
+	<Element name="Channels" location="1.55,16.6" size="15.45,6.12" alpha="255" clearBeforeRender="true">
+		<Rect location="0.2,0" size="99.6,100" fillColor="Channels"/>
+		<Text text="@number" location="3,0" size="94,100" font="DefaultMinimum" align="Left" valign="Center"/>
+		<Text text="@name" location="21,0" size="77,100" font="DefaultMinimum" align="Right" valign="Center"/>
+	</Element>
+
+	<Element name="SelectedShowDetails" location="1.55,67.36" size="96.9,24.72" alpha="255">
+		<Rect location="0,-8" size="100,108" fillColor="Guide_Description" borderColor="Transparent" borderWidth="0"/>
+<!--
+			<Rect location="0,0" size="50,1.15" fillColor="Accent2_Horizontal_FadeIn"/>
+			<Rect location="49.95,0" size="50.05,1.15" fillColor="Accent2_Horizontal_FadeOut"/>
+-->
+		<Text text="@titleSubtitle" location="1.55,3.09" size="96.9,20" font="Title0" align="Left"/>
+		<Text text="@shortperiod" location="1.55,3.09" size="96.9,20" font="Title1" align="right"/>
+		<Text text="@description" location="1.55,21.55" size="96.9,73.8" font="DefaultSmall" wrap="true"/>
+	</Element>
+
+
+
+	<Element name="CurrentTimeAbove" location="0,0" size="1.15,1.15">			
+		<Image source="..\_Common\Down.png" location="0,0" size="100,100"/>
+	</Element>
+
+	<Element name="CurrentTimeBelow" location="0,0" size="1.15,1.15">
+		<Image source="..\_Common\Up.png" location="0,0" size="100,100"/>
+	</Element>
+
+</Skin>

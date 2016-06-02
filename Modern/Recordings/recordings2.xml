@@ -1,0 +1,67 @@
+<Skin>
+    <Element name="ListView" location="0,12" size="100,75.28" alpha="255" visibleRows="7">
+<!--
+        <Rect location="0,0" size="50,0.3" fillColor="Accent2_Horizontal_FadeIn" />
+        <Rect location="49.99,0" size="50.01,0.3" fillColor="Accent2_Horizontal_FadeOut" />
+        <Rect location="0,0" size="100,100" fillColor="BaseColor1" />
+        <Rect location="0,99.5" size="50,0.3" fillColor="Accent2_Horizontal_FadeIn" />
+        <Rect location="49.99,99.5" size="50.01,0.3" fillColor="Accent2_Horizontal_FadeOut" />
+-->
+
+    </Element>
+
+    <Element name="ListItemNormal" location="0.77,12" size="60.26,9.52" alpha="255" alphaFade="true">
+        <Rect location="0.15,0.15" size="99.7,98.45" fillColor="Normal_Recording" />
+        <Image source="watched.png" visible="@alreadyViewed" location="1,5" size="1,90" />
+<!--        <Image source="watched.png" visible="@alreadyViewed" location="1,5" size="1,90" />-->
+        <Image source="red.png" visible="@flaggedRed" location="79,10" size="10,35" fixedAspectRatio="true" />
+        <Image source="green.png" visible="@flaggedGreen" location="83,10" size="10,35" fixedAspectRatio="true" />
+        <Image source="yellow.png" visible="@flaggedYellow" location="87,10" size="10,35" fixedAspectRatio="true" />
+        <Image source="blue.png" visible="@flaggedBlue" location="91,10" size="10,35" fixedAspectRatio="true" />
+        <Text text="@name" location="2.5,10" size="82,40" font="Title1" align="Left" valign="Center" />
+        <Text text="@status" location="50,15" size="48,40" font="DefaultSmaller" align="Right" valign="Center" />
+        <Text text="@period" location="2.5,55" size="88,40" font="DefaultSmaller" align="Left" valign="Center" />
+        <Text text="@channel" location="50,55" size="48,40" font="DefaultSmaller" align="Right" valign="Center" />
+    </Element>
+
+    <Element name="ListItemSelected" location="0.77,12" size="60.26,9.52" alpha="255" alphaFade="true">
+        <Rect visible="@controlSelected" location="0.15,0.15" size="99.7,99.4" fillColor="Selected_Recording" borderColor="Border2" borderWidth="0.3" />
+        <Rect visible="@controlNotSelected" location="0.15,0.15" size="99.7,99.4" fillColor="Selected_Recording" borderColor="Border2" borderWidth="0.3" />
+        <Image source="watched.png" visible="@alreadyViewed" location="1,5" size="1,90" />
+        <Image source="red.png" visible="@flaggedRed" location="79,10" size="10,35" fixedAspectRatio="true" />
+        <Image source="green.png" visible="@flaggedGreen" location="83,10" size="10,35" fixedAspectRatio="true" />
+        <Image source="yellow.png" visible="@flaggedYellow" location="87,10" size="10,35" fixedAspectRatio="true" />
+        <Image source="blue.png" visible="@flaggedBlue" location="91,10" size="10,35" fixedAspectRatio="true" />
+        <Text text="@name" location="2.5,10" size="82,40" font="Title1_Selected" align="Left" valign="Center" />
+        <Text text="@status" location="50,15" size="48,40" font="DefaultReverseSmaller" align="Right" valign="Center" />
+        <Text text="@period" location="2.5,55" size="88,40" font="DefaultReverseSmaller" align="Left" valign="Center" />
+        <Text text="@channel" location="50,55" size="48,40" font="DefaultReverseSmaller" align="Right" valign="Center" />
+    </Element>
+
+    <Element name="ListSelectionMetaData" location="61.8,12" size="37,68.75" alpha="255">
+        <Rect location="0,0" size="100,99.4" fillColor="Normal_Recording" />
+        <!-- 		<Rect location="0.3,4" size="0.3,46" fillColor="Accent2_Vertical_FadeIn"/>
+		<Rect location="0.3,49.9" size="0.3,46.1" fillColor="Accent2_Vertical_FadeOut"/> -->
+        <Text text="@title" visible="@isItem" location="2.32,1.55" size="93.03,18.18" font="Title0" wrap="true" align="Left" valign="Bottom" />
+        <!--		<Image source="@channelIcon" visible="@isItem" location="3.09,7.73" size="14,12" fixedAspectRatio="true" /> -->
+        <Text text="@subtitle" visible="@isItem" location="2.32,20.51" size="93.03,5" font="Title4Small" align="Left" wrap="true" />
+        <Text text="@description" visible="@isItem" location="2.32,26.28" size="93.03,63.17" font="DefaultSmall" align="left" wrap="true" />
+        <Text text="@failureReason" location="2.32,88.45" size="93.03,10" font="Title5Minimum" wrap="true" align="Center" valign="Bottom" />
+        <Image source="@previewImage" visible="@isFolder" location="15,15" size="70,70" fixedAspectRatio="true" />
+    </Element>
+
+
+    <Element name="SelectedList" location="0,87.44" size="100,4.64" alpha="255">
+        <Rect location="-1,0" size="102,100" fillColor="BaseColor2" />
+        <Image source="..\_Common\Left.png" name="ActionLeft" location="35,15" size="2,70" fixedAspectRatio="true" valign="Center" />
+        <Image source="..\_Common\Right.png" name="ActionRight" location="63,15" size="2,70" fixedAspectRatio="true" valign="Center" />
+        <Text text="@selectedList" location="0,0" size="100,100" font="Default" align="Center" valign="Center" />
+    </Element>
+
+
+    <Element name="ListPosition" location="0,87.44" size="100,4.64" alpha="255" alphaFade="true">
+        <Text text="File:" location="85,0" size="10,100" font="Title3Minimum" align="Left" valign="Center" />
+        <Text text="@positionInfo" location="0,0" size="95,100" font="Title3Minimum" align="Right" valign="Center" />
+    </Element>
+
+</Skin>

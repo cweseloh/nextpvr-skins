@@ -1,0 +1,34 @@
+<Skin>
+	<Element name="Info" location="10,10" size="80,77" alpha="255" okButton="40,85.4" cancelButton="60,85.4">
+		<Rect location="2,2" size="98,98" fillColor="#fafafa" borderColor="Popup_Border" borderWidth="0.07"/>
+		<Text text="Video Information" location="5,5" size="72,6" font="Title0" wrap="false" valign="Bottom"/>		
+
+    <Text text="@item1Name" location="5,20" size="22,10" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@item1Value" location="25,20" size="74,10" font="Default" align="Left" valign="Center"/>		
+
+    <Text text="@item2Name" location="5,28" size="22,10" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@item2Value" location="25,28" size="74,10" font="Default" align="Left" valign="Center"/>		
+		
+    <Text text="@item3Name" location="5,36" size="22,10" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@item3Value" location="25,36" size="74,10" font="Default" align="Left" valign="Center"/>		
+
+    <Text text="@item4Name" location="5,44" size="22,10" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@item4Value" location="25,44" size="74,10" font="Default" align="Left" valign="Center"/>		
+
+    <Text text="@item5Name" location="5,52" size="22,10" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@item5Value" location="25,52" size="74,10" font="Default" align="Left" valign="Center"/>		
+
+    <Text text="@item6Name" location="5,60" size="22,10" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@item6Value" location="25,60" size="74,10" font="Default" align="Left" valign="Center"/>		
+
+    <Text text="@item7Name" location="5,68" size="22,10" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@item7Value" location="25,68" size="74,10" font="Default" align="Left" valign="Center"/>		
+
+    <Text text="@item8Name" location="5,76" size="22,10" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@item8Value" location="25,76" size="74,10" font="Default" align="Left" valign="Center"/>		
+
+    <Text text="@item9Name" location="5,84" size="22,10" font="Title3Small" align="Left" valign="Center"/>
+		<Text text="@item9Value" location="25,84" size="74,10" font="Default" align="Left" valign="Center"/>		
+
+	</Element>
+</Skin>
